@@ -8,7 +8,7 @@ if sys.argv[1] == "test":
 if sys.argv[1] == "run":
     MAZE_SIZE = 100 #迷路のサイズ
 
-#課題2のnext関数
+#next関数
 def next(x, CL, OL, maze):
     if maze[x[0]-1][x[1]] == '0' and [x[0]-1,x[1]] not in CL: #xの上が通路かつCLに居ないときOLにその座標を追加
         OL.append([x[0]-1,x[1]])
